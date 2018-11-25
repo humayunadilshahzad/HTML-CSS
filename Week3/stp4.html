@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="formstyle.css">
+
+</head>
+
+<body>
+    <main>
+        <header class="flex">
+            <logo>
+                <img src="abc" alt="logo" width="100px">
+            </logo>
+
+            <nav class="navigation">
+
+
+            </nav>
+        </header>
+        <section>
+            <h1>Sign up to yourcustomtailor.com</h1>
+
+            <h3>Step 4/4 - tells us how you are?</h3>
+            <p>Progress</p>
+
+            <div class="p-bar">
+                <div class="progress-bar">
+                </div>
+            </div>
+        </section>
+
+        <p>Please fill in your payment data</p>
+
+
+        <form action="/my-handling-form-page" method="post">
+
+            <div class="form-top">
+
+                <div class="lef">
+
+                    <div>
+                        <label for="name">Name on card</label>
+                        <input type="text" id="name" name="name-oncard" required>
+                    </div>
+
+                    <div>
+                        <label for="cardtype">Card type</label>
+                        <select id="cardtype">
+                            <option value="0">Select Card:</option>
+                            <option value="1">Visa</option>
+                            <option value="2">Master</option>
+                            <option value="3">Dan card</option>
+                            <option value="4">American Ex</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="cardnumber">Card number</label>
+                        <input type="number" id="cardnumber" name="card-no" required>
+                    </div>
+                    <div class="flex">
+                        <div class="lef">
+                                <label for="exp-mon">Expiry month</label>
+                                <input type="number" id="exp-mon" name="exp-mon" required>
+                        </div>
+                        <div class="rit">
+                                <label for="exp-year">Expiry Year</label>
+                                <input type="number" id="exp-year" name="exp-year" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="ccv">CCV</label>
+                        <input type="number" id="cct" name="ccv-no" required>
+                    </div>
+
+                </div> <!-- ending div class lef -->
+
+                <div class="rit" style="padding-top:96px;">
+
+                    <div>
+                        <label for="f-name">First name</label>
+                        <input type="text" id="f-name" name="user_firstname">
+                    </div>
+
+                </div> <!-- ending div class rit -->
+            </div>
+            <br><br><br><br><br>
+
+            <div class="button flex" style="margin-left:67%;">
+                <button type="submit">Next</button>
+            </div>
+
+
+        </form>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="formstyle.css">
+
+</head>
+
+<body>
+    <main>
+        <header class="flex">
+            <logo>
+                <img src="abc" alt="logo" width="100px">
+            </logo>
+
+            <nav class="navigation">
+
+
+            </nav>
+        </header>
+        <section>
+            <h1>Sign up to yourcustomtailor.com</h1>
+
+            <h3>Step 2/4 - tells us how you are?</h3>
+            <p>Progress</p>
+
+            <div class="p-bar">
+                <div class="progress-bar">
+                </div>
+            </div>
+        </section>
+
+        <p>We will probably need to stay in touch somehow. Let us know how can we reach you?</p>
+
+
+        <form action="/my-handling-form-page" method="post">
+
+            <div class="form-top">
+
+                <div class="lef">
+
+                    <div>
+                        <label for="mail">E-mail*</label>
+                        <input type="email" id="mail" name="user_email" required>
+                    </div>
+
+                    <div>
+                        <label for="pass">Password*</label>
+                        <input type="password" id="pass" name="password" required>
+                    </div>
+
+                    <div>
+                        <label for="con-pass">Confirm password*</label>
+                        <input type="password" id="con-pass" name="con-pasword" required>
+                    </div>
+
+                </div> <!-- ending div class lef -->
+
+                <div class="rit">
+
+                    <div>
+                        <label for="phone">Phone no</label>
+                        <input type="text" id="phone" name="user_phone">
+                    </div>
+
+                </div> <!-- ending div class rit -->
+            </div>
+
+            <div>
+                <p>I want to sign up for the news letter.</p>
+            </div>
+
+            <div class="flex">
+
+                <label for="weekly">Weekly</label>
+                <input class="width" type="radio" id="weekly" name="opt-news" value="weekly" checked>
+
+                <label for="monthly">Monthly</label>
+                <input type="radio" id="monthly" name="opt-news" value="monthly">
+
+                <label for="no-news">Don't send me News</label>
+                <input type="radio" id="no-news" name="opt-news" value="no-news">
+
+                <!--<div><input type="radio" name="gender" value="female"> Female</div>
+                <div><input type="radio" name="gender" value="other"> Other </div>-->
+            </div>
+            <br><br><br><br><br>
+
+            <div class="button flex" style="margin-left:67%;">
+                <button type="submit">Next</button>
+            </div>
+
+
+        </form>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="formstyle.css">
+
+    
+
+</head>
+
+<body>
+    <main>
+        <header class="flex">
+            <logo>
+                <img src="abc" alt="logo" width="100px">
+            </logo>
+
+            <nav class="navigation">
+
+
+            </nav>
+        </header>
+        <section>
+            <h1>Sign up to yourcustomtailor.com</h1>
+            <p>We can´t wait to help you imorove your life-style and gain attention from people around you!</p>
+            <p>Sign up below to save up to 70% on apparel,handbags and cosmatics. Our agents are busy picking the best
+                offers that match your preferences and style.Every week we will send you a hand picked selection- We
+                just need to know a few details about your first..</p>
+
+            <h3>Step 1/4 - tells us how you are?</h3>
+            <p>Progress</p>
+
+            <div class="p-bar">
+                <div class="progress-bar">
+
+                </div>
+            </div>
+        </section>
+        <p>Nice to meet you. Let's spend a minute to get to know each other. Please enter the following:</p>
+
+
+        <form action="/my-handling-form-page" method="post">
+
+            <div class="form-top">
+
+                <div class="lef">
+
+                    <div>
+                        <label for="name">First name*</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+
+                    <div>
+                        <label for="Country">Country*</label>
+
+                        <select id="Country">
+                            <option value="0">Select Country:</option>
+                            <option value="1">Denmark</option>
+                            <option value="2">Sweeden</option>
+                            <option value="3">Norway</option>
+                            <option value="4">Germeny</option>
+                            <option value="5">England</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="name">Street address*</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+
+                </div> <!-- ending div class lef -->
+
+                <div class="rit">
+                    <div>
+                        <label for="mail">Last name*</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+
+                    <br><br>
+
+                    <div>
+                        <label for="mail">Post code*</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+
+                </div> <!-- ending div class rit -->
+            </div>
+
+            
+            <!---->
+            <div id="hidnseek" style="display:none">
+                <br><br>
+                <label>Shipping Address</label>
+
+            <div class="form-top">
+
+                <div class="lef">
+
+                    <div>
+                        <label for="name">First name*</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+
+                    <div>
+                        <label for="Country">Country*</label>
+
+                        <select id="Country">
+                            <option value="0">Select Country:</option>
+                            <option value="1">Denmark</option>
+                            <option value="2">Sweeden</option>
+                            <option value="3">Norway</option>
+                            <option value="4">Germeny</option>
+                            <option value="5">England</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="name">Street address*</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+
+                </div> <!-- ending div class lef -->
+
+                <div class="rit">
+                    <div>
+                        <label for="mail">Last name*</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+
+                    <br><br>
+
+                    <div>
+                        <label for="mail">Post code*</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+
+                </div> <!-- ending div class rit -->
+            </div>
+
+        </div>
+            <!-- hidnseek-->
+
+            <br><br>
+
+            <div>
+                <label for="msg">Profile description <br><br><span>please provide a short description of yourself to be
+                        displayed on our social comunity pages.</span></label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+
+            <div>
+                <p>Use the same address for billing and shipping? Uncheck below to fill out different shipping address.</p>
+            </div>
+
+            <div>
+                <label for="check">Shipping Address</label>
+                <input type="checkbox" id="check" name="diff-add-checkbox" checked onclick="myFunction()">               
+            </div>
+
+            <script>
+                function myFunction() {
+                    var checkBox = document.getElementById("check");
+                    var text = document.getElementById("hidnseek");
+                    if (checkBox.checked == true){
+                        text.style.display = "none";
+                    } else {
+                       text.style.display = "block";
+                    }
+                }
+                </script>
+
+            <div class="button flex" style="margin-left:67%;">
+                <button type="submit">Next</button>
+               <!-- <button onclick="window.location.href='/stp2.html'">next</button>-->
+            </div>
+            
+        </form>
+
+    </main>
+</body>
+
+</html>
